@@ -1,0 +1,163 @@
+.profile-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--bg);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.profile-header h1 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.back-btn {
+  font-size: 16px;
+  color: var(--primary);
+  padding: 4px 8px;
+}
+
+.profile-card {
+  background: #fff;
+  margin: 16px 20px;
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.profile-card h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.profile-info-list {
+  text-align: left;
+}
+
+.profile-info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.profile-info-item:last-child {
+  border-bottom: none;
+}
+
+.profile-info-item span:first-child {
+  color: var(--text-secondary);
+}
+
+.profile-section {
+  margin: 16px 20px;
+}
+
+.profile-section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+
+.profile-empty {
+  font-size: 13px;
+  color: var(--text-light);
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: var(--radius);
+}
+
+.bindings-list {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.binding-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.binding-item:last-child {
+  border-bottom: none;
+}
+
+.binding-icon {
+  font-size: 24px;
+}
+
+.binding-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.binding-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.binding-time {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.profile-actions {
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.btn-danger {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+  background: #fff;
+  color: var(--danger);
+  font-size: 15px;
+  font-weight: 500;
+  border: 1.5px solid var(--danger);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.btn-danger:hover {
+  background: var(--danger);
+  color: #fff;
+}
+
+.profile-loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+}
