@@ -14,7 +14,7 @@ const apps = [
     appKey: 'txsy',
     name: '太虚书院',
     description: '与古典名著角色深度对话',
-    icon: '📚',
+    icon: '/icons/txsy.svg',
     url: isProd ? 'https://txsy.pinyanzhi.net' : 'http://localhost:3003',
     callbackUrl: isProd
       ? 'https://txsy.pinyanzhi.net/api/h5/auth/sso-callback'
@@ -24,7 +24,7 @@ const apps = [
     appKey: 'game-helper',
     name: '速心电竞',
     description: '游戏代练与陪玩服务平台',
-    icon: '🎮',
+    icon: '/icons/game-helper.svg',
     url: isProd ? 'https://game.pinyanzhi.net' : 'http://localhost:3000',
     callbackUrl: isProd
       ? 'https://game.pinyanzhi.net/api/auth/sso-callback'
@@ -34,7 +34,7 @@ const apps = [
     appKey: 'credit-card',
     name: '留金计划',
     description: '信用卡还款计划与财务管理',
-    icon: '💳',
+    icon: '/icons/credit-card.svg',
     url: isProd ? 'https://fund.pinyanzhi.net' : 'http://localhost:3005',
     callbackUrl: isProd
       ? 'https://fund.pinyanzhi.net/api/auth/sso-callback'
