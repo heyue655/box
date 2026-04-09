@@ -8,7 +8,7 @@ import { authSso } from '../middleware/auth';
 const router = Router();
 const prisma = new PrismaClient();
 const JWT_SECRET = process.env.JWT_SECRET || 'heyue_box_secret';
-const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '90d';
+const JWT_EXPIRES_IN = (process.env.JWT_EXPIRES_IN || '90d') as jwt.SignOptions['expiresIn'];
 
 // ─── Register ───────────────────────────────────────────
 router.post('/register', async (req: Request, res: Response) => {
