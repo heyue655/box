@@ -22,7 +22,7 @@ const apps = [
   },
   {
     appKey: 'game-helper',
-    name: '游戏助手',
+    name: '速心电竞',
     description: '游戏代练与陪玩服务平台',
     icon: '🎮',
     url: isProd ? 'https://game.pinyanzhi.net' : 'http://localhost:3000',
@@ -32,7 +32,7 @@ const apps = [
   },
   {
     appKey: 'credit-card',
-    name: '记账工具',
+    name: '留金计划',
     description: '信用卡还款计划与财务管理',
     icon: '💳',
     url: isProd ? 'https://fund.pinyanzhi.net' : 'http://localhost:3005',

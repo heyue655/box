@@ -8,10 +8,10 @@
 USE txsy;
 ALTER TABLE users ADD COLUMN sso_user_id INT NULL;
 
--- 2. 游戏助手 (database: game_helper, table: users)
+-- 2. 速心电竞 (database: game_helper, table: users)
 USE game_helper;
 ALTER TABLE users ADD COLUMN sso_user_id BIGINT UNSIGNED NULL;
 
--- 3. 记账工具 (database: credit_repayment, table: users)
+-- 3. 留金计划 (database: credit_repayment, table: users)
 USE credit_repayment;
 ALTER TABLE users ADD COLUMN sso_user_id INT NULL;
