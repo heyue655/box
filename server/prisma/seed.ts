@@ -15,10 +15,10 @@ const apps = [
     name: '太虚书院',
     description: '与古典名著角色深度对话',
     icon: '📚',
-    url: isProd ? 'https://txsy.pinyanzhi.net' : 'http://localhost:3001',
+    url: isProd ? 'https://txsy.pinyanzhi.net' : 'http://localhost:3003',
     callbackUrl: isProd
       ? 'https://txsy.pinyanzhi.net/api/h5/auth/sso-callback'
-      : 'http://localhost:3001/api/h5/auth/sso-callback',
+      : 'http://localhost:3003/api/h5/auth/sso-callback',
   },
   {
     appKey: 'game-helper',
