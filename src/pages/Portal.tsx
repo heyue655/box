@@ -43,8 +43,8 @@ export default function Portal() {
     <div className="portal-page">
       <header className="portal-header">
         <div className="portal-header-left">
-          <span className="portal-logo">📦</span>
-          <h1>合跃盒子</h1>
+          <img src="/logo.svg" alt="万象阁" className="portal-logo-img" />
+          <h1>万象阁</h1>
         </div>
         <div className="portal-header-right">
           <button className="avatar-btn" onClick={() => navigate('/profile')}>

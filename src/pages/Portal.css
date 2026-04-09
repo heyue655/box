@@ -26,6 +26,13 @@
   font-size: 28px;
 }
 
+.portal-logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: block;
+}
+
 .portal-header-left h1 {
   font-size: 18px;
   font-weight: 700;

@@ -55,7 +55,7 @@ export default function Login() {
     <div className="login-page">
       <div className="login-header">
         <div className="login-logo">📦</div>
-        <h1>合跃盒子</h1>
+        <h1>万象阁</h1>
         <p>一站式应用管理平台</p>
       </div>
 
