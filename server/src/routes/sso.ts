@@ -189,6 +189,22 @@ router.post('/token', async (req: Request, res: Response) => {
       where: { ssoUserId_appKey: { ssoUserId: user.id, appKey: app_key } },
     });
 
+    // 当子系统无绑定账号时，使用盒子的真实账号信息作为建议账号，
+    // 避免子系统使用 sso_n 等可预测的默认账号（存在被破解风险）
+    let suggested_account = null;
+    if (!binding) {
+      const suggestedUsername = user.username || user.phone || user.email || `sso_${crypto.randomBytes(16).toString('hex')}`;
+      const suggestedPassword = crypto.randomBytes(24).toString('base64url');
+      suggested_account = {
+        username: suggestedUsername,
+        password: suggestedPassword,
+        nickname: user.nickname,
+        phone: user.phone,
+        email: user.email,
+        avatar: user.avatar,
+      };
+    }
+
     return res.json({
       code: 0,
       data: {
@@ -199,6 +215,7 @@ router.post('/token', async (req: Request, res: Response) => {
         email: user.email,
         username: user.username,
         binding: binding ? { local_user_id: binding.localUserId } : null,
+        suggested_account,
       },
     });
   } catch (err: any) {
