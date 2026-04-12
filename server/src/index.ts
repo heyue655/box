@@ -9,7 +9,7 @@ import ssoRouter from './routes/sso';
 import appsRouter from './routes/apps';
 
 const app = express();
-app.use(cors());
+app.use(cors({ exposedHeaders: ['X-Renewed-Token'] }));
 app.use(express.json());
 
 app.use('/sso', ssoRouter);

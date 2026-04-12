@@ -17,6 +17,12 @@ export async function request<T = any>(url: string, opts: RequestOptions = {}): 
     body: body ? JSON.stringify(body) : undefined,
   });
 
+  // Auto-renew: if the server returned a fresh token, persist it
+  const renewedToken = res.headers.get('X-Renewed-Token');
+  if (renewedToken) {
+    localStorage.setItem('heyue_token', renewedToken);
+  }
+
   const json = await res.json();
 
   if (!res.ok || json.code !== 0) {

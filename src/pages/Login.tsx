@@ -54,7 +54,7 @@ export default function Login() {
   return (
     <div className="login-page">
       <div className="login-header">
-        <div className="login-logo">📦</div>
+        <img className="login-logo" src="/logo.svg" alt="万象阁" />
         <h1>万象阁</h1>
         <p>一站式应用管理平台</p>
       </div>
